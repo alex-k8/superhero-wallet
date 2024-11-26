@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-	"appflow:build": "npm run build:$PLATFORM_NAME",
+	"appflow:build": "npm run build:$CI_PLATFORM",
     "lint:vue": "vue-cli-service lint --no-fix",
     "lint:vue:fix": "vue-cli-service lint --fix",
     "lint:css": "stylelint src/**/*.{css,scss,vue}",

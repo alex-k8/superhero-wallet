@@ -3,7 +3,7 @@
     [
         {
             "appId": "1acf122f",
-            "dependencyInstallCommand": "if [ \"$PLATFORM_NAME\" = \"ios\" ]; then brew install pkg-config; fi && npm ci"
+            "dependencyInstallCommand": "if [ \"$CI_PLATFORM\" = \"ios\" ]; then brew install pkg-config; fi && npm ci"
         }
     ]
 }
