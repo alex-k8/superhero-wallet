@@ -6,6 +6,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+	"prebuild": "brew install pkg-config",
 	"appflow:build": "brew install pkg-config && npm run build:ios",
     "lint:vue": "vue-cli-service lint --no-fix",
     "lint:vue:fix": "vue-cli-service lint --fix",
