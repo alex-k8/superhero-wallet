@@ -1,0 +1,9 @@
+{
+    "apps":
+    [
+        {
+            "appId": "1acf122f",
+            "dependencyInstallCommand": "brew install pkg-config && npm i",
+        },
+    ]
+}
