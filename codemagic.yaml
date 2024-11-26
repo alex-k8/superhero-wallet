@@ -8,14 +8,11 @@ workflows:
             XCODE_WORKSPACE: "platforms/ios/YOUR_APP.xcworkspace"
             XCODE_SCHEME: "YOUR_SCHEME"
     scripts:
-        - name: Install npm dependencies for Ionic project
-          script: |
+        Install npm dependencies for Ionic project: |
             brew install pkg-config && npm ci
-        - name: Build
-          script: |
+        Build: |
             npm run build:ios
-        - name: Build ipa for distribution
-          script: |
+        Build ipa for distribution: |
             cd $CM_BUILD_DIR/ios/App
             xcode-project build-ipa \
             --workspace "$XCODE_WORKSPACE" \
